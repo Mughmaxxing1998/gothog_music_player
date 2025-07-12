@@ -88,11 +88,13 @@ class GothogMusicPlayer(Adw.Application):
         """
         css_provider.load_from_data(css_data.encode())
         
-        Gtk.StyleContext.add_provider_for_display(
-            Gdk.Display.get_default(),
-            css_provider,
-            Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION
-        )
+        display = Gdk.Display.get_default()
+        if display is not None:
+            Gtk.StyleContext.add_provider_for_display(
+                display,
+                css_provider,
+                Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION
+            )
     
     def _on_preferences(self, action, param):
         """Show preferences dialog."""
@@ -123,6 +125,9 @@ class GothogMusicPlayer(Adw.Application):
 
 def main():
     """Main entry point."""
+    if not Gtk.init_check():
+        logger.critical("Gtk couldn't be initialized.")
+        return 1
     app = GothogMusicPlayer()
     return app.run(sys.argv)
 
