@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Gothog Music Player
+Comment=A modern playlist-focused music player
+Exec=gothog-music-player
+Icon=org.gothog.MusicPlayer
+Terminal=false
+Type=Application
+Categories=Audio;Music;Player;GTK;
+Keywords=Music;Player;Audio;Playlist;Spotify;YouTube;
+StartupNotify=true

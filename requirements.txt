@@ -1,0 +1,23 @@
+# Core dependencies
+PyGObject>=3.42.0
+pycairo>=1.20.0
+
+# Audio and metadata
+mutagen>=1.45.0
+python-gst>=1.0
+
+# Download engines
+yt-dlp>=2023.7.6
+spotipy>=2.23.0
+
+# Database
+# SQLite is included with Python
+
+# Testing
+pytest>=7.0.0
+pytest-cov>=3.0.0
+
+# Development tools
+black>=22.0.0
+flake8>=4.0.0
+mypy>=0.931

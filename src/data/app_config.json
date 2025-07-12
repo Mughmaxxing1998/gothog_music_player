@@ -1,0 +1,40 @@
+{
+  "app_name": "Gothog Music Player",
+  "version": "0.1.0",
+  "default_settings": {
+    "playlists_directory": "~/Music/Playlists",
+    "download_quality": "320kbps",
+    "concurrent_downloads": 3,
+    "theme": "system",
+    "volume": 0.8,
+    "crossfade_duration": 3,
+    "gapless_playback": true,
+    "auto_save": true,
+    "save_delay_ms": 500,
+    "metadata_sources": ["musicbrainz", "lastfm"],
+    "duplicate_handling": "skip"
+  },
+  "supported_formats": [
+    ".mp3",
+    ".flac",
+    ".m4a",
+    ".opus",
+    ".ogg",
+    ".wav"
+  ],
+  "keyboard_shortcuts": {
+    "play_pause": "space",
+    "next_track": "ctrl+right",
+    "previous_track": "ctrl+left",
+    "volume_up": "ctrl+up",
+    "volume_down": "ctrl+down",
+    "shuffle_toggle": "ctrl+s",
+    "repeat_cycle": "ctrl+r",
+    "edit_playlist": "ctrl+e",
+    "new_playlist": "ctrl+n",
+    "download_playlist": "ctrl+d",
+    "search": "ctrl+f",
+    "delete_track": "delete",
+    "rename_playlist": "f2"
+  }
+}
